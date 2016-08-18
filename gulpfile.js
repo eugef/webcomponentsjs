@@ -124,12 +124,13 @@ gulp.task('copy-bower', function() {
 
 defineBuildTask('webcomponents', './src/WebComponents/build.json');
 defineBuildTask('webcomponents-lite', './src/WebComponents/build-lite.json');
+defineBuildTask('webcomponents-lite-no-import', './src/WebComponents/build-lite-no-import.json');
 defineBuildTask('CustomElements');
 defineBuildTask('HTMLImports');
 defineBuildTask('ShadowDOM');
 defineBuildTask('MutationObserver');
 
-gulp.task('build', ['webcomponents', 'webcomponents-lite', 'CustomElements', 
+gulp.task('build', ['webcomponents', 'webcomponents-lite', 'webcomponents-lite-no-import', 'CustomElements',
   'HTMLImports', 'ShadowDOM', 'copy-bower', 'MutationObserver']);
 
 gulp.task('release', function(cb) {

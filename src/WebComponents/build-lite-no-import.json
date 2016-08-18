@@ -1,0 +1,10 @@
+[
+  "build/boot-lite.js",
+  "../URL/URL.js",
+  "../WeakMap/WeakMap.js",
+  "../MutationObserver/MutationObserver.js",
+  "../Template/Template.js",
+  "../CustomElements/build.json",
+  "dom.js",
+  "unresolved.js"
+]

@@ -22,6 +22,8 @@ Pre-built (concatenated & minified) versions of the polyfills are maintained in 
 
 `webcomponents-lite.js` includes all polyfills except for shadow DOM.
 
+`webcomponents-lite-no-import.js` includes all polyfills except for shadow DOM and HTMLImport.
+
 
 ## Browser Support
 
