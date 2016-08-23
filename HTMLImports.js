@@ -449,7 +449,7 @@ window.HTMLImports = window.HTMLImports || {
       watchImportsLoad(callback, doc);
     }, doc);
   }
-  var requiredReadyState = isIE ? "complete" : "interactive";
+  var requiredReadyState = "interactive";
   var READY_EVENT = "readystatechange";
   function isDocumentReady(doc) {
     return doc.readyState === "complete" || doc.readyState === requiredReadyState;
