@@ -85,7 +85,7 @@ function whenReady(callback, doc) {
 }
 
 // call the callback when the document is in a ready state (has dom)
-var requiredReadyState = isIE ? 'complete' : 'interactive';
+var requiredReadyState = 'interactive';
 var READY_EVENT = 'readystatechange';
 function isDocumentReady(doc) {
   return (doc.readyState === 'complete' ||
