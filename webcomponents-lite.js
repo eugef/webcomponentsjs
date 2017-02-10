@@ -7,7 +7,7 @@
  * Code distributed by Google as part of the polymer project is also
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
-// @version 0.7.22
+// @version 0.7.24
 (function() {
   window.WebComponents = window.WebComponents || {
     flags: {}
@@ -1183,7 +1183,7 @@ window.HTMLImports = window.HTMLImports || {
       watchImportsLoad(callback, doc);
     }, doc);
   }
-  var requiredReadyState = "interactive";
+  var requiredReadyState = isIE ? "complete" : "interactive";
   var READY_EVENT = "readystatechange";
   function isDocumentReady(doc) {
     return doc.readyState === "complete" || doc.readyState === requiredReadyState;
